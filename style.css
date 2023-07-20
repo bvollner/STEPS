@@ -4,11 +4,6 @@
     --red: #710f11;
     --gray: #c9d5d6;
     --dk-gray:#333333;
-    --green: #6bbe96;
-    --dk-green: #6eaf86;
-    --lt-teal: #789097;
-    --teal: #083741;
-
 }
 
 html {
@@ -22,17 +17,22 @@ html {
     background: rgb(251,177,23);
 background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 50%, rgba(113,15,17,1) 100%);
     font-family: 'Lato', sans-serif;
-      font-weight: 300;
-      letter-spacing: -.02rem;
-      font-size: 14px;
       color: var(--dk-gray);
       line-height: 1.667;
       text-align: right;
       margin: 0 auto;
   }
+  #hero_section {
+    background-color: #000;
+  }
   h1 {
     text-align: left;
   }
+  .h1_img{
+    max-height: 300px;
+    margin: 20px;
+}
+
   h2 {
       font-size: 2.25rem;
       font-weight: bold;
@@ -54,6 +54,7 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 50%,
     font-size: 30px;
     line-height: normal;
     color: #fff;
+    text-align: right;
 }
   p {
     padding: 0;
@@ -68,7 +69,15 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 50%,
   a {
       text-decoration: none;
   }
-
+  .nav {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  .nav_list {
+    padding: 20px;
+  }
   ul {
       list-style-type: none;
       text-align: left;
@@ -76,7 +85,11 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 50%,
       margin: 0;
       padding: 0;
   }
-
+.hero_container{
+  max-width: 70rem;
+  margin: 0 auto 30px;
+  display: flex; 
+}
   .container{
     max-width: 70rem;
     margin: 0 auto;    
@@ -85,16 +98,10 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 50%,
     position: sticky;
     top: 0;
 }
-.header__container{
+.header_container {
+  background-color: #710f11;
     max-width: 100%;
     margin: auto;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-.h1_img{
-    max-height: 200px;
-    margin: 40px;
 }
 .section_container{
     max-width: 100%;
