@@ -15,7 +15,7 @@ html {
 
   body{
     background: rgb(251,177,23);
-background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 75%, rgba(113,15,17,1) 100%);
+background: linear-gradient(0deg, rgba(251,177,23,.25) 0%, rgba(215,100,38,.25) 100%);
     font-family: 'Lato', sans-serif;
       color: var(--dk-gray);
       line-height: 1.667;
@@ -23,17 +23,17 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 75%,
       margin: 0 auto;
   }
   #hero_section {
-    background-color: #000;
+    background-image:linear-gradient(to left top, rgba(0,0,0,.75), rgba(255,255,255,.15)), url(img/warrenton.jpg);
   }
   h1 {
     text-align: left;
   }
-  .h1_img{
-    max-height: 300px;
-    margin: 20px;
+  #h1_img{
+    max-width: 500px;
 }
 
   h2 {
+    color: var(--red);
       font-size: 2.25rem;
       font-weight: bold;
       letter-spacing: -.04rem;
@@ -42,16 +42,20 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 75%,
   }
 
   h3 {
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 600;
       font-style: italic;
+      padding: 0;
   }
   h4 {
+    font-weight: 600;
     font-style: italic;
+    padding: 0;
+    margin: 0 auto;
   }
 .hook_text {
     font-style: oblique;
-    font-size: 30px;
+    font-size: 29px;
     line-height: normal;
     color: #fff;
     text-align: right;
@@ -61,13 +65,42 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 75%,
     font-size: 18px;
     font-weight: 400;
   }
+  figcaption{
+    padding: 0;
+    font-size: 12px;
+  }
   section {
     display: flex;
   }
 
   a {
-      text-decoration: none;
+      color: var(--dk-gray);
+      font-style: italic;
+      
   }
+  a:hover {
+    color: #666;
+    text-decoration: underline;
+  }
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+figure{
+  padding: 30px;
+}
+iframe{
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+#column_view{
+  max-width: 500px;
+}
+#stb_logo{
+  float: right;
+}
+  /* nav css */
   .nav {
     color: white;
     text-align: center;
@@ -84,9 +117,23 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 75%,
       margin: 0;
       padding: 0;
   }
+  li {
+    padding: 0 0 30px 0;
+    margin: 0 auto;
+  }
+  a.nav {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+  }
+  a.nav:hover{
+    text-decoration: underline;
+  }
+  /* nav end */
+
 .hero_container{
   max-width: 70rem;
-  margin: 0 auto 30px;
+  margin: 50px auto 50px;
   display: flex; 
 }
   .container{
@@ -104,4 +151,22 @@ background: linear-gradient(0deg, rgba(251,177,23,1) 0%, rgba(215,100,38,1) 75%,
 }
 .section_container{
     max-width: 100%;
+}
+.clatsop_section_container{
+  max-width:100%;
+  display: flex
+}
+
+/* footer */
+footer {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px auto;
+  color: var(--gray);
+}
+.footer_container {
+  padding: 15px;
+  max-width: 100%;
+  background-color: #333;
 }
