@@ -48,6 +48,7 @@ background: linear-gradient(0deg, rgba(251,177,23,.25) 0%, rgba(215,100,38,.25) 
       padding: 0;
   }
   h4 {
+    color:#710f11;
     font-weight: 600;
     font-style: italic;
     padding: 0;
@@ -97,15 +98,25 @@ iframe{
 #column_view{
   max-width: 500px;
 }
-#stb_logo{
+#training{
   float: right;
 }
+#training_pic{
+  max-height: 400px;
+}
+#bleed_kit{
+  float: left;
+}
   /* nav css */
+  .menu{
+    display: flex;
+  }
   .nav {
     color: white;
     text-align: center;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
   .nav_list {
     padding: 20px;
