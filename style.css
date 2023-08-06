@@ -90,9 +90,13 @@ img {
 figure{
   padding: 30px;
 }
-iframe{
+#iframe{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  float: none;
+  max-width: 500px;
+  padding: 0;
+  text-align: right;
   margin: 40px auto;
 }
 #column_view{
@@ -104,8 +108,14 @@ iframe{
 #training_pic{
   max-height: 400px;
 }
+#fig2 {
+  max-width: 300px;
+}
 #bleed_kit{
   float: left;
+}
+#bleedcap{
+  max-width: 600px;
 }
   /* nav css */
   .menu{
@@ -123,7 +133,7 @@ iframe{
   }
   ul {
       list-style-type: none;
-      text-align: left;
+      text-align: right;
       font-size: 18px;
       margin: 0;
       padding: 0;
@@ -152,7 +162,6 @@ iframe{
     margin: 50px auto;    
 }
 .header{
-    position: sticky;
     top: 0;
 }
 .header_container {
